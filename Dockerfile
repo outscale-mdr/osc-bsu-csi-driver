@@ -33,6 +33,6 @@ RUN apt-get -y update && \
                        --no-install-recommends && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-COPY  --from=builder /build/bin/aws-ebs-csi-driver /bin/aws-ebs-csi-driver
+COPY  --from=builder /build/bin/osc-bsu-csi-driver /bin/osc-bsu-csi-driver
 
-ENTRYPOINT ["/bin/aws-ebs-csi-driver"]
+ENTRYPOINT ["/bin/osc-bsu-csi-driver"]
