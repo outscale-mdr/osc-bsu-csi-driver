@@ -41,7 +41,7 @@ const (
 )
 
 const (
-	DriverName  = "ebs.csi.aws.com"
+	DriverName  = "csi.outscale.com"
 	TopologyKey = "topology." + DriverName + "/zone"
 )
 
