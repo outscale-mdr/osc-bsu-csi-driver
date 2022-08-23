@@ -11,13 +11,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Docker login
-        run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-        env:
-          DOCKER_USER: ${{secrets.DOCKER_USER}}
-          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       - name : push to Docker Hub
         run: make build-image image-tag image-push
         env: 
           TARGET_IMAGE: outscale/osc-ebs-csi-driver
           REGISTRY_IMAGE: outscale/osc-ebs-csi-driver
+      - name: Docker login
+        run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+        env:
+          DOCKER_USER: ${{secrets.DOCKER_USER}}
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
