@@ -1,4 +1,8 @@
 # Changelog
+
+## [v0.2.0]
+### Notables changes
+* toto
 ## [v0.1.0]
 > **_NOTE:_** In case no topology is provided by the CO (not the case for Kubernetes > v1.17), the volume will be created in the AZ A.
 ### Notable changes
