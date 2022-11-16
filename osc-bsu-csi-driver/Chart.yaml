@@ -1,6 +1,6 @@
 apiVersion: v1
 appVersion: "v0.1.0"
-name: osc-bsu-csi-driver
+name: osc-bsu-csi-driver-helm
 description: A Helm chart for Outscale BSU CSI Driver
 version: 0.8.0
 kubeVersion: ">=1.14.0-0"
