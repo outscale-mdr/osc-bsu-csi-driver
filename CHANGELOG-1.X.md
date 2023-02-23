@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.1.2]
+### Bugfixes
+* Fix deployement when using helm-git ([#520](https://github.com/outscale-dev/osc-bsu-csi-driver/issues/520))
+
 ## [v1.1.1]
 ### Bugfixes
 * Fix deployement when using helm-git ([#520](https://github.com/outscale-dev/osc-bsu-csi-driver/issues/520))
