@@ -1,0 +1,7 @@
+name: e2e_test
+
+on:
+  pull_request_target:
+    branches:
+      - OSC-MIGRATION
+      - master
